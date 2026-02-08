@@ -1,0 +1,92 @@
+Parsing design file 'design.sv'
+Parsing design file 'testbench.sv'
+Top Level Modules:
+       tb
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+4 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling module FIFO
+recompiling module fifo_if
+recompiling module tb
+All of 4 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib -L/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib  -Wl,-rpath-link=./   objs/amcQw_d.o  _287_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile -luclinative /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .727 seconds to compile + .801 seconds to elab + .478 seconds to link
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP1_Full64; Runtime version X-2025.06-SP1_Full64;  Feb  8 08:16 2026
+[DRV]: RESET DONE
+-----------------------------------------------
+[GEN]: Oper: 0, iteration: 1
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 0, dout: 0, full: 0, empty: 1
+[SCO] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN]: Oper: 0, iteration: 2
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 0, dout: 0, full: 0, empty: 1
+[SCO] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN]: Oper: 0, iteration: 3
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 0, dout: 0, full: 0, empty: 1
+[SCO] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN]: Oper: 0, iteration: 4
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 0, dout: 0, full: 0, empty: 1
+[SCO] : Wr:0 rd:1 din:0 dout:0 full:0 empty:1
+[SCO] : FIFO IS EMPTY
+--------------------------------------
+[GEN]: Oper: 1, iteration: 5
+[DRV]: DATA WRITE, data: 8
+[MON]: wr: 1, rd: 0, din: 8, dout: 0, full: 0, empty: 1
+[SCO] : Wr:1 rd:0 din:8 dout:0 full:0 empty:1
+[SCO] : DATA STORED IN QUEUE :8
+--------------------------------------
+[GEN]: Oper: 0, iteration: 6
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 8, dout: 8, full: 0, empty: 0
+[SCO] : Wr:0 rd:1 din:8 dout:8 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+[GEN]: Oper: 1, iteration: 7
+[DRV]: DATA WRITE, data: 1
+[MON]: wr: 1, rd: 0, din: 1, dout: 8, full: 0, empty: 1
+[SCO] : Wr:1 rd:0 din:1 dout:8 full:0 empty:1
+[SCO] : DATA STORED IN QUEUE :1
+--------------------------------------
+[GEN]: Oper: 1, iteration: 8
+[DRV]: DATA WRITE, data: 10
+[MON]: wr: 1, rd: 0, din: 10, dout: 8, full: 0, empty: 0
+[SCO] : Wr:1 rd:0 din:10 dout:8 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :10
+--------------------------------------
+[GEN]: Oper: 0, iteration: 9
+[DRV]: DATA READ
+[MON]: wr: 0, rd: 1, din: 10, dout: 1, full: 0, empty: 0
+[SCO] : Wr:0 rd:1 din:10 dout:1 full:0 empty:0
+[SCO] : DATA MATCH
+--------------------------------------
+[GEN]: Oper: 1, iteration: 10
+[DRV]: DATA WRITE, data: 9
+[MON]: wr: 1, rd: 0, din: 9, dout: 1, full: 0, empty: 0
+[SCO] : Wr:1 rd:0 din:9 dout:1 full:0 empty:0
+[SCO] : DATA STORED IN QUEUE :9
+--------------------------------------
+---------------------------------------------
+Error Count :0
+---------------------------------------------
+$finish called from file "testbench.sv", line 231.
+$finish at simulation time                  690
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 690 ns
+CPU Time:      0.610 seconds;       Data structure size:   0.0Mb
+Sun Feb  8 08:16:06 2026
+Done
