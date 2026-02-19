@@ -1,5 +1,9 @@
 /////////////////////////////////////////////////////////////////////////////////////
+
+
 /// The testbench got stuck in GEN class only, Debug the code when you got some good experience (MUST !)
+
+
 /// add data members for input and output ports except global signals (these signals will be initialised in environment class)
 
 class transaction;			//// defining the namespaces of packet to environment
