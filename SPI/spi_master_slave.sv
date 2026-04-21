@@ -23,14 +23,13 @@ output reg cs, MOSI, sclk);
       sclk_tick <= 0;
     end
     else begin
+	  sclk_tick <= (countc == 9);
       if(countc == 9) begin
         countc <= 0;
         sclk <= ~sclk;
-        sclk_tick <= 1'b1;
         end
       else
         countc <= countc + 1;
-      sclk_tick <= 0;
       end
   end
   
@@ -126,7 +125,7 @@ module SPI_Slave (input sclk, MOSI, cs,
 	 read_data:begin
   		temp <= {MOSI, temp[11:1]};
   		count = count + 1;
-  		if(count == 11) begin
+		 if(count == 12) begin
     		done <= 1;
   			count <= 0;
     		state <= detect_start;
